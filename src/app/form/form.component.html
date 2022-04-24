@@ -1,0 +1,89 @@
+<!-- Header -->
+<div class="container">
+  <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-bottom">
+    <p class="col-md-8 mb-0 text-muted">© Argus Teknoloji - Salih Koç Angular Framework Draft Project ( On Angular 13 )</p>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="container-fluid bg-secondary py-5">
+  <div class="bg-light col-md-7 p-5 py-4 mx-auto border-top " style="border-radius: 30px;">
+    <div class="rounded mx-auto">
+      <h4 class="mb-2">User save form</h4>
+      <div class="needs-validation" novalidate="">
+        <div class="row g-3">
+
+          <!-- isim giriş alanı -->
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" [(ngModel)]="name" class="form-control" required="">
+          </div>
+
+          <!-- Soyad giriş alanı -->
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" [(ngModel)]="surname" class="form-control" id="lastName" placeholder="" value="" required="">
+          </div>
+
+          <!-- Kullanıcı adı giriş alanı -->
+          <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input type="text" [(ngModel)]="username" class="form-control" id="username" placeholder="Username" required="">
+            </div>
+          </div>
+
+          <!-- Kullanıcı şifre giriş alanı -->
+          <div class="col-12">
+            <label for="exampleInputPassword1">Password</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+              <input type="password" [(ngModel)]="password" class="form-control" id="Password" placeholder="Password" required="">
+            </div>
+          </div>
+
+          <!-- Kullanıcı email giriş alanı -->
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+            <div class="input-group has-validation">
+              <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
+              <input type="email" [(ngModel)]="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+          </div>
+
+          <!-- Kullanıcı telefon giriş alanı -->
+          <div class="col-12">
+            <label for="exampleInputPassword1">Phone</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+              <input type="text" [(ngModel)]="phone" class="form-control" id="Phone" placeholder="Phone" required="">
+            </div>
+          </div>
+
+          <!-- kullanıcı adres giriş alanı -->
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text"> <i class="fa-solid fa-location-dot"></i></span>
+              <input type="text" [(ngModel)]="address" class="form-control" id="address" placeholder="1234 Main St" required="">
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="btn btn-primary btn-lg" id="btnSave" type="button" (click)="onUserSave()">Save User</button>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <div class="py-3 my-4">
+    <p class="text-center">Salih Koç Angular Framework Draft Project ( On Angular 13 )</p>
+    <hr class="my-4">
+    <p class="text-center text-muted">© Argus Teknoloji</p>
+  </div>
+</div>
